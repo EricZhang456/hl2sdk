@@ -1,5 +1,5 @@
 //========= Copyright Valve Corporation, All rights reserved. ============//
-#if !defined(POSIX) || !defined(NOMINMAX)
+#if !defined(POSIX) && !defined(NOMINMAX)
 #ifndef min
 	#define min(a,b)  (((a) < (b)) ? (a) : (b))
 #endif
