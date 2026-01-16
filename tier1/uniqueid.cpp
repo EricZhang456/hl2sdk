@@ -11,6 +11,8 @@
 
 #ifdef IS_WINDOWS_PC
 #include <windows.h> // UUIDCreate
+#include <rpc.h>
+#include <rpcdce.h>
 #else
 #include "checksum_crc.h"
 #endif

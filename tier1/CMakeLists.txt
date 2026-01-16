@@ -59,4 +59,6 @@ target_include_directories(hl2sdk_tier1 PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../public/tier1
 )
 
-target_compile_definitions(hl2sdk_tier1 PRIVATE WIN32_LEAN_AND_MEAN=)
+if(WIN32)
+    target_link_libraries(hl2sdk_tier1 PRIVATE rpcrt4)
+endif()

@@ -28,5 +28,3 @@ target_include_directories(hl2sdk_mathlib PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../public/tier0
     ${CMAKE_CURRENT_SOURCE_DIR}/../public/mathlib
 )
-
-target_compile_definitions(hl2sdk_mathlib PRIVATE WIN32_LEAN_AND_MEAN=)
