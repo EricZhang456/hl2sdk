@@ -58,3 +58,5 @@ target_include_directories(hl2sdk_tier1 PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../public/tier0
     ${CMAKE_CURRENT_SOURCE_DIR}/../public/tier1
 )
+
+target_compile_definitions(hl2sdk_tier1 PRIVATE WIN32_LEAN_AND_MEAN=)
